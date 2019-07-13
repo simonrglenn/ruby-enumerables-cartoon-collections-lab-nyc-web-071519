@@ -1,5 +1,5 @@
 def roll_call_dwarves(names)
-  names.each_with_index{ |name, number| p ("/#{number}.*#{name}/") }
+  names.each_with_index{ |name, number| p ("/#{number+1}.*#{name}/") }
 end
 
 # def roll_call_dwarves(names)
