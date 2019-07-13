@@ -1,5 +1,7 @@
 def roll_call_dwarves(names)
-  names.each_with_index{ |name, number| puts "/#{number}.*#{name}/" }
+  new = []
+  names.each_with_index{ |name, number| new.push("/#{number}.*#{name}/") }
+  new.join(" ")
 end
 
 def summon_captain_planet# code an argument here
