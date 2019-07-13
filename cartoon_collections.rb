@@ -8,7 +8,7 @@ end
 
 def long_planeteer_calls(words)
   short_words = []
-  words.any? { |word| word.length <= 4 ? short_words.push(word) : break false }
+  words.any? { |word| word.length <= 4 ? short_words.push(word) : break }
   true
 end
 
