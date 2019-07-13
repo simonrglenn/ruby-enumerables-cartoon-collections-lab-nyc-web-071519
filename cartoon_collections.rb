@@ -6,8 +6,10 @@ def summon_captain_planet(elements)
   elements = elements.collect{ |element| element.capitalize + "!" }
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(words)
+  short_words = []
+  words.any? { |word| word.length <= 4 ? short_words.push(word) : break return false }
+  true
 end
 
 def find_the_cheese# code an argument here
