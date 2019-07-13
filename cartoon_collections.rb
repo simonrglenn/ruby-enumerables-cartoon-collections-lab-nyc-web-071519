@@ -13,7 +13,14 @@ end
 def find_the_cheese(array)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  words.any? { |string| }
-
-
+  array.collect { |string| array.include?(string)}.include?(true)
 end
+
+
+cheeses = %w(chedder stilton brie mozzarella feta haloumi reblochon)
+foods = %w(pizza feta foods bread biscuits yoghurt bacon)
+
+puts cheeses.collect{|c| foods.include?(c)}.include?(true)
+
+puts (cheeses - foods).size < cheeses.size
+
